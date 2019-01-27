@@ -11,5 +11,12 @@
     "comma-dangle": "off",
     "react/jsx-filename-extension": "off",
     "react/prefer-stateless-function": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["client"]
+      }
+    }
   }
 }

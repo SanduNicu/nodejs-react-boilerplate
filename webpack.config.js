@@ -7,6 +7,9 @@ module.exports = {
     path: path.join(__dirname, '/dist'),
     filename: 'index-bundle.js'
   },
+  resolve: {
+    modules: [path.resolve('./client'), path.resolve('./node_modules')]
+  },
   module: {
     rules: [
       {
@@ -33,8 +36,5 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './client/index.html'
     })
-  ],
-  resolve: {
-    modules: [path.resolve('./client'), path.resolve('./node_modules')]
-  }
+  ]
 };
