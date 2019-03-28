@@ -1,0 +1,25 @@
+// $dark: #415a77;
+// $darker: #1b263b;
+// $darkest: #0d1b2a;
+// $light: #778da9;
+// $lighter: #e0e1dd;
+// $lightest: #f6f6f5;
+
+$colors: (
+  dark: #415a77,
+  darker: #1b263b,
+  darkest: #0d1b2a,
+  light: #778da9,
+  lighter: #e0e1dd,
+  lightest: #f6f6f5,
+);
+
+@each $color, $hex in $colors {
+  .text-#{$color} {
+    color: $hex;
+  }
+
+  .bg-#{$color} {
+    background-color: $hex;
+  }
+}
