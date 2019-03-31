@@ -1,4 +1,4 @@
-#About
+# About
 ReactJs + NodeJs boilerplate; WIP!
 + scss;
 + redux (thunk) - with ducks;
