@@ -5,7 +5,7 @@ module.exports = {
   entry: './client/index.js',
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'index-bundle.js'
+    filename: 'index-bundle.js',
   },
   resolve: {
     modules: [path.resolve('./client'), path.resolve('./node_modules')]
@@ -35,6 +35,7 @@ module.exports = {
   devServer: {
     port: 3000,
     open: false,
+    historyApiFallback: true,
     proxy: {
       '/api': 'http://localhost:8080'
     }
